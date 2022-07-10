@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -32,40 +31,42 @@ class _GameApplicationState extends State<GameApplication> {
           appBar: getAppbar(),
           backgroundColor: Colors.transparent,
           body: SafeArea(
-            child: Column(
-              mainAxisSize: MainAxisSize.max,
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              // crossAxisAlignment: CrossAxisAlignment.stretch,
-              children: [
-                Image(
-                  image: AssetImage('images/$top.png'),
-                  height: 200,
-                  width: 390,
-                ),
-                OutlinedButton(
-                  onPressed: () {
-                    setState(() {
-                      top = Random().nextInt(3) + 1;
-                      bottom = Random().nextInt(3) + 1;
-                    });
-                  },
-                  child: Text(
-                    'شروع',
-                    style: TextStyle(fontSize: 20),
+            child: Center(
+              child: Column(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                // crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Image(
+                    image: AssetImage('images/$top.png'),
+                    height: 200,
+                    width: 390,
                   ),
-                  style: TextButton.styleFrom(
-                    side: BorderSide(color: Color(0xFF620ABD)),
-                    primary: Color(0xFF620ABD),
-                    minimumSize: Size(200.0, 40.0),
-                    shape: StadiumBorder(),
+                  OutlinedButton(
+                    onPressed: () {
+                      setState(() {
+                        top = Random().nextInt(3) + 1;
+                        bottom = Random().nextInt(3) + 1;
+                      });
+                    },
+                    child: Text(
+                      'شروع',
+                      style: TextStyle(fontSize: 20),
+                    ),
+                    style: TextButton.styleFrom(
+                      side: BorderSide(color: Color(0xFF620ABD)),
+                      primary: Color(0xFF620ABD),
+                      minimumSize: Size(200.0, 40.0),
+                      shape: StadiumBorder(),
+                    ),
                   ),
-                ),
-                Image(
-                  image: AssetImage('images/$bottom.png'),
-                  height: 200,
-                  width: 390,
-                ),
-              ],
+                  Image(
+                    image: AssetImage('images/$bottom.png'),
+                    height: 200,
+                    width: 390,
+                  ),
+                ],
+              ),
             ),
           ),
         ),
@@ -83,3 +84,4 @@ PreferredSizeWidget getAppbar() {
     title: Text('سـنگ   کاغـذ   قیچـی'),
   );
 }
+
