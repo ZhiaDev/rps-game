@@ -76,6 +76,7 @@ class _GameApplicationState extends State<GameApplication> {
 
 PreferredSizeWidget getAppbar() {
   return AppBar(
+    centerTitle: true,
     // elevation: 0,
     shadowColor: Color(0xFFB456CF),
     backgroundColor: Color(0xFF620ABD),
