@@ -3,11 +3,11 @@
 
 <br/>
 
-## 📍 Support
-- 🍎 IOS
-- 🤖 Android
+## Support :
+- IOS
+- Android
 
 <br/>
 
-## 📱 Screenshot 
+## Screenshot :
 ![banner](https://github.com/SharifiDev/rps-game/raw/master/banner.png)
